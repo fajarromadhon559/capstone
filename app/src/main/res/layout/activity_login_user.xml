@@ -7,25 +7,29 @@
     tools:context=".LoginUser">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/login_ek1_string"
-        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:src="@drawable/mobile_login_amico_1"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_textInputLayout"
@@ -72,12 +76,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        style="@style/OutlinedRoundedBox"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="66dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/login_ek1_string"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -87,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.35" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

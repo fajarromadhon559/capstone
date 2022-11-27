@@ -5,8 +5,8 @@
     <string name="login_string">Login</string>
     <string name="password_string">Password</string>
     <string name="email_string">Email</string>
-    <string name="login_ek1_string">Login</string>
-    <string name="title_activity_register">RegisterActivity</string>
+    <string name="login_ek1_string">Masuk</string>
+    <string name="title_activity_register">Daftar</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -17,4 +17,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="name_string">Name</string>
     <string name="phone_num_string">Phone Number</string>
+    <string name="txt_pre_login">Untuk Melanjutkan Daftar dulu yukk!</string>
 </resources>
