@@ -8,9 +8,129 @@
 
     <fragment
         android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MapsActivity" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/map_layout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <Button
+        android:id="@+id/btn_pedagang"
+        style="@style/OutlinedRoundedBox"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/cart_img"
+        android:text="@string/pedagang_keliling"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btn_warung"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <Button
+        android:id="@+id/btn_warung"
+        style="@style/OutlinedRoundedBox"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/stall_img"
+        android:text="@string/warung"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pedagang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_pedagang"
+        app:layout_constraintTop_toTopOf="@id/btn_pedagang" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/kategori"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/list_of_category"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom_viewpager_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top_viewpager_category"
+        tools:listitem="@layout/category_items" />
+
+    <TextView
+        android:id="@+id/tv_best_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/best_seller"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_bottom_viewpager_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_best_seller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/list_of_category"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top_rv_best_seller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/best_seller_items" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_viewpager_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom_viewpager_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top_rv_best_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

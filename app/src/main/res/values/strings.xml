@@ -23,4 +23,9 @@
     <string name="txt_finish_regist">Yeayy berhasil terdaftar!</string>
     <string name="txt_finish_regist2">Yuk lanjut masuk ke aplikasi nya!</string>
     <string name="btn_finish_regist">Masuk sekarang</string>
+    <string name="pedagang_keliling">Pedagang Keliling</string>
+    <string name="warung">Warung</string>
+    <string name="kategori">Kategori</string>
+    <string name="list_of_category">list of category</string>
+    <string name="best_seller">Best Seller</string>
 </resources>
