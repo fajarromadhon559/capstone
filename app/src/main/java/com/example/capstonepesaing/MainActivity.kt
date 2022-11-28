@@ -13,12 +13,6 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, LoginUser::class.java))
-        }
 
-        binding.btnRegister.setOnClickListener{
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
     }
 }
