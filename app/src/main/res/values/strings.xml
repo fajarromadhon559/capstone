@@ -18,4 +18,9 @@
     <string name="name_string">Name</string>
     <string name="phone_num_string">Phone Number</string>
     <string name="txt_pre_login">Untuk Melanjutkan Daftar dulu yukk!</string>
+    <string name="txt_pre_login2">Jika sudah memiliki akun</string>
+    <string name="txt_to_login">Login</string>
+    <string name="txt_finish_regist">Yeayy berhasil terdaftar!</string>
+    <string name="txt_finish_regist2">Yuk lanjut masuk ke aplikasi nya!</string>
+    <string name="btn_finish_regist">Masuk sekarang</string>
 </resources>

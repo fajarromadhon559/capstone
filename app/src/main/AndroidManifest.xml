@@ -15,6 +15,27 @@
         android:theme="@style/Theme.CapstonePesaing"
         tools:targetApi="31">
         <activity
+            android:name=".cart"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CategoryDetail"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FinishRegister"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PreLogin"
             android:exported="false">
             <meta-data
