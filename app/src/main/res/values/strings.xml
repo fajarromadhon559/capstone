@@ -1,6 +1,26 @@
 <resources>
     <string name="app_name">CapstonePesaing</string>
 
+    <string-array name="category_name">
+        <item>Sayur</item>
+        <item>Buah</item>
+        <item>Daging</item>
+        <item>Bumbu</item>
+        <item>Ikan</item>
+        <item>Ayam</item>
+        <item>Kue</item>
+    </string-array>
+
+    <integer-array name="category_img">
+        <item>@drawable/sayur</item>
+        <item>@drawable/buah</item>
+        <item>@drawable/daging</item>
+        <item>@drawable/bumbu</item>
+        <item>@drawable/ikan</item>
+        <item>@drawable/ayam</item>
+        <item>@drawable/kue</item>
+    </integer-array>
+
     <string name="ek_img_content">ExportKit Image</string>
     <string name="login_string">Login</string>
     <string name="password_string">Password</string>

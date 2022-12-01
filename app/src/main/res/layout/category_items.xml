@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="110dp"
-    android:layout_height="110dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="25dp"
+    app:cardElevation="0dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:shape="ring"
-    app:cardCornerRadius="70dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
@@ -17,13 +15,12 @@
 
         <ImageView
             android:id="@+id/img_icon_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_icon_category"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             android:layout_gravity="center"
             tools:src="@drawable/placeholder_circle" />
 
@@ -32,6 +29,7 @@
             android:labelFor="@id/img_icon_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             app:layout_constraintTop_toBottomOf="@id/img_icon_category"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
