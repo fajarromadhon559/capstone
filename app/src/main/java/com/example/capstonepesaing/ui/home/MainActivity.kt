@@ -1,4 +1,4 @@
-package com.example.capstonepesaing
+package com.example.capstonepesaing.ui.home
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-
     }
 }

@@ -1,4 +1,4 @@
-package com.example.capstonepesaing
+package com.example.capstonepesaing.ui.register
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
