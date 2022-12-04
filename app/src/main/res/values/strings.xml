@@ -48,4 +48,23 @@
     <string name="kategori">Kategori</string>
     <string name="list_of_category">list of category</string>
     <string name="best_seller">Best Seller</string>
+    <string name="simpang_pengguna">Simpan Pengguna</string>
+
+    <!-- View Pedagang   -->
+    <string name="text_mp_1">Ingin Daftarkan barang?</string>
+    <string name="text_mp_2">Lapakmu</string>
+    <string name="text_mp_btn">Daftarkan Barang</string>
+    <string name="text_dp">pilih!</string>
+    <string name="inp_nama">Nama</string>
+    <string name="inp_harga">Harga</string>
+    <string name="inp_stok">Stok</string>
+    <string-array name="dropDown_kategori">
+        <item>Sayuran</item>
+        <item>Buah</item>
+        <item>Daging</item>
+        <item>Bumbu</item>
+        <item>Ikan</item>
+        <item>Ayam</item>
+        <item>Kue</item>
+    </string-array>
 </resources>

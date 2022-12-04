@@ -70,4 +70,5 @@ dependencies {
 
     //Utility
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }
