@@ -17,13 +17,13 @@
         android:theme="@style/Theme.CapstonePesaing"
         tools:targetApi="31">
         <activity
-            android:name=".DetailBarang"
+            android:name=".view_pedagang.DetailBarang"
             android:exported="false" />
         <activity
-            android:name=".InputBarang"
+            android:name=".view_pedagang.InputBarang"
             android:exported="false" />
         <activity
-            android:name=".MainVP"
+            android:name=".view_pedagang.MainVP"
             android:exported="false" /> <!-- META-DATA API KEY FOR MAP -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
