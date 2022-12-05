@@ -25,9 +25,9 @@
         <activity
             android:name=".view_pedagang.MainVP"
             android:exported="false" /> <!-- META-DATA API KEY FOR MAP -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="${GOOGLE_MAPS_API_KEY}" />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.geo.API_KEY"-->
+<!--            android:value="${GOOGLE_MAPS_API_KEY}" />-->
 
         <activity
             android:name=".ui.cart.Cart"
