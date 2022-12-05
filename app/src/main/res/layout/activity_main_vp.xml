@@ -37,7 +37,7 @@
 
     <Button
         style="@style/OutlinedRoundedBox"
-        android:id="@+id/btn_inp"
+        android:id="@+id/btn_inp_barang"
         android:layout_width="0dp"
         android:layout_height="66dp"
         android:layout_marginStart="16dp"

@@ -76,6 +76,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btn_login"
         style="@style/OutlinedRoundedBox"
         android:layout_width="0dp"
         android:layout_height="66dp"

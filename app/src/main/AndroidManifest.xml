@@ -51,7 +51,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.login.PreLogin"
+            android:name=".ui.register.PreLogin"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
