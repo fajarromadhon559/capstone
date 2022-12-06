@@ -1,6 +1,6 @@
 package com.example.capstonepesaing.data.model
 
-data class User(
+data class User (
     var user_id : Int?,
     var nama : String?,
     var no_hp : String?,

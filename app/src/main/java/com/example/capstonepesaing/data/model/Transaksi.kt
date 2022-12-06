@@ -1,6 +1,6 @@
 package com.example.capstonepesaing.data.model
 
-data class Transaksi(
+data class Transaksi (
     var user_id : Int?,
     var transaksi_id : Int?,
     var transaksi_total : String?,
