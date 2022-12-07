@@ -15,6 +15,7 @@ class PreLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPreLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         binding.toRegister.setOnClickListener{
             val i = Intent(this, RegisterActivity::class.java)
