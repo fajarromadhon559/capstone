@@ -2,22 +2,24 @@ package com.example.capstonepesaing.view_pedagang
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
+import android.widget.Spinner
+import android.widget.Toast
 import com.example.capstonepesaing.R
 
 class InputBarang : AppCompatActivity() {
+    private lateinit var listKt : Spinner
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_input_barang)
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_input_barang)
-//
-//        val dropDownView = findViewById<DropDownView>(R.id.dp_kategori)
-//        val collapsedView : View = LayoutInflater.from(this ).inflate(R.layout.header,null, false)
-//        val expandedView : View = arrayOf(R.array.dropDown_kategori)
-//
-//        dropDownView.setHeaderView(collapsedView)
-//        dropDownView.setExpandedView(expandedView)
-//
-//    }
+//buat dropdown nya aj dah bisa
+        listKt = findViewById(R.id.spinner_barang)
+        listKt = findViewById(R.id.spinner_satuan)
+
+//        ini bermaksud pas kategori diklik munculin toast text, cuman gak bisa
+//        listKt.setOnClickListener{
+//            val toast = Toast.makeText(this,"kamu memilih kategori${listKt.selectedItem}", Toast.LENGTH_SHORT)
+//            toast.show()
+//        }
+    }
 }

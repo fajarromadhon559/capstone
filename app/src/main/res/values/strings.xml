@@ -60,6 +60,8 @@
     <string name="inp_stok">Stok</string>
     <string name="invalid_email">Invalid Email</string>
     <string name="password_error">Password Error</string>
+    <string name="inp_satuan">Satuan</string>
+    <string name="btn_inp">Tambahkan Barang</string>
     <string-array name="dropDown_kategori">
         <item>Sayuran</item>
         <item>Buah</item>
@@ -68,5 +70,10 @@
         <item>Ikan</item>
         <item>Ayam</item>
         <item>Kue</item>
+    </string-array>
+    <string-array name="dropDown_satuan">
+        <item>Kg</item>
+        <item>gram</item>
+        <item>Ikat</item>
     </string-array>
 </resources>
