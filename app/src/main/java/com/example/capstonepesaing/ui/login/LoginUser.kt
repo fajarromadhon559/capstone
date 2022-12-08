@@ -13,10 +13,15 @@ class LoginUser : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.title = "Login"
 
         binding.btnLogin.setOnClickListener{
             val i = Intent(this, MainActivity::class.java)
             startActivity(i)
         }
     }
+
+//    private fun setupViewModel(){
+//        viewModelViewModel.isLoading.observe(this){showLoading(it)}
+//    }
 }

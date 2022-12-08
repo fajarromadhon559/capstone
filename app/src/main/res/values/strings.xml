@@ -58,6 +58,8 @@
     <string name="inp_nama">Nama</string>
     <string name="inp_harga">Harga</string>
     <string name="inp_stok">Stok</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="password_error">Password Error</string>
     <string-array name="dropDown_kategori">
         <item>Sayuran</item>
         <item>Buah</item>

@@ -17,6 +17,13 @@
         android:theme="@style/Theme.CapstonePesaing"
         tools:targetApi="31">
         <activity
+            android:name=".AddBarangActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".view_pedagang.DetailBarang"
             android:exported="false" />
         <activity
@@ -25,10 +32,9 @@
         <activity
             android:name=".view_pedagang.MainVP"
             android:exported="false" /> <!-- META-DATA API KEY FOR MAP -->
-<!--        <meta-data-->
-<!--            android:name="com.google.android.geo.API_KEY"-->
-<!--            android:value="${GOOGLE_MAPS_API_KEY}" />-->
-
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="${GOOGLE_MAPS_API_KEY}" /> -->
         <activity
             android:name=".ui.cart.Cart"
             android:exported="false">
@@ -58,6 +64,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -79,8 +86,6 @@
         <activity
             android:name=".ui.home.MainActivity"
             android:exported="false">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

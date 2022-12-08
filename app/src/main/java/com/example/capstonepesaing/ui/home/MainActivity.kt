@@ -1,20 +1,24 @@
 package com.example.capstonepesaing.ui.home
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.capstonepesaing.R
+import com.example.capstonepesaing.data.ListAdapter
 import com.example.capstonepesaing.data.local.Category
 import com.example.capstonepesaing.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvCategory: RecyclerView
     private val list = ArrayList<Category>()
+    private lateinit var rvCategory: RecyclerView
+    private val viewModel by viewModels<MainViewModel>()
     private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,11 +26,20 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        supportActionBar?.title = "Home"
+
+//        adapter = ListAdapter()
 
         rvCategory = binding.rvCategory
         rvCategory.setHasFixedSize(true)
         list.addAll(listCategory)
         showRecyclerList()
+    }
+
+    private fun pedagang(){
+//        binding.btnPedagang.setOnClickListener{
+//            val intent = Intent(this, add)
+//        }
     }
 
     private val listCategory: ArrayList<Category>

@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
     id 'kotlin-parcelize'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -70,5 +71,20 @@ dependencies {
 
     //Utility
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Paging
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+    implementation 'androidx.room:room-paging:2.5.0-alpha01'
+
+    //Room
+    implementation 'androidx.room:room-ktx:2.5.0-alpha01'
+    kapt 'androidx.room:room-compiler:2.5.0-alpha01'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+
+    // Hilt
+    implementation "com.google.dagger:hilt-android:2.41"
+    kapt "com.google.dagger:hilt-compiler:2.41"
 
 }
