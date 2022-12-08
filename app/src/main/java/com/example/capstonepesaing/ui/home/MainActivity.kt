@@ -1,5 +1,6 @@
 package com.example.capstonepesaing.ui.home
 
+import android.app.Activity
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +16,7 @@ import com.example.capstonepesaing.R
 import com.example.capstonepesaing.data.ListAdapter
 import com.example.capstonepesaing.data.local.Category
 import com.example.capstonepesaing.databinding.ActivityMainBinding
+import com.example.capstonepesaing.ui.barang.add.AddBarangActivity
 
 class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Category>()
@@ -28,18 +31,32 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         supportActionBar?.title = "Home"
 
-//        adapter = ListAdapter()
-
         rvCategory = binding.rvCategory
         rvCategory.setHasFixedSize(true)
         list.addAll(listCategory)
         showRecyclerList()
+
+        pedagang()
+        warung()
+        setupViewModel()
     }
 
     private fun pedagang(){
-//        binding.btnPedagang.setOnClickListener{
-//            val intent = Intent(this, add)
-//        }
+        binding.btnPedagang.setOnClickListener{
+            val intent = Intent(this, AddBarangActivity::class.java)
+            startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity as Activity).toBundle())
+        }
+    }
+
+    private fun warung(){
+        binding.btnWarung.setOnClickListener{
+            val intent = Intent(this, AddBarangActivity::class.java)
+            startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity as Activity).toBundle())
+        }
+    }
+
+    private fun setupViewModel(){
+
     }
 
     private val listCategory: ArrayList<Category>
