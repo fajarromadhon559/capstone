@@ -61,6 +61,17 @@
     <string name="cart">cart</string>
     <string name="profile">profile</string>
 
+    <!--Profile-->
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="no_pengguna">No Pengguna</string>
+    <string name="txt_akun">Akun</string>
+    <string name="txt_ganti_pass">Ganti password</string>
+    <string name="txt_pesanan">Pesanan</string>
+    <string name="txt_metode">Metode Pembayaran</string>
+    <string name="txt_Logout">Logout</string>
+    <string name="txt_footer">created by PESAING Team 2022</string>
+    <string name="txt_footer_version">Versi 0.0.1 beta</string>
+
     <!-- View Pedagang   -->
     <string name="text_mp_1">Ingin Daftarkan barang?</string>
     <string name="text_mp_2">Lapakmu</string>
