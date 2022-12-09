@@ -48,7 +48,18 @@
     <string name="kategori">Kategori</string>
     <string name="list_of_category">list of category</string>
     <string name="best_seller">Best Seller</string>
+    <string name="n_pedagang_keliling">Nama Pedagang</string>
+    <string name="n_pedagang_warung">Nama Warung</string>
+    <string name="live_location">1km</string>
+    <string name="out_location_pedagang">Lokasi terkini pedagang</string>
+    <string name="out_location_warung">Lokasi terkini warung</string>
     <string name="simpang_pengguna">Simpan Pengguna</string>
+
+    <!--Botton Nav-->
+    <string name="home">Home</string>
+    <string name="riwayat">riwayat</string>
+    <string name="cart">cart</string>
+    <string name="profile">profile</string>
 
     <!-- View Pedagang   -->
     <string name="text_mp_1">Ingin Daftarkan barang?</string>

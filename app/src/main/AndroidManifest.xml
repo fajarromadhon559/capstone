@@ -17,12 +17,14 @@
         android:theme="@style/Theme.CapstonePesaing"
         tools:targetApi="31">
         <activity
-            android:name=".AddBarangActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".ui.addbarang.AddBarangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail_pedagang.warung.DetailWarung"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail_pedagang.keliling.DetailPedagangKeliling"
+            android:exported="false" />
         <activity
             android:name=".view_pedagang.DetailBarang"
             android:exported="false" />

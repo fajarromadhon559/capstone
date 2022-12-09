@@ -13,10 +13,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.capstonepesaing.R
-import com.example.capstonepesaing.data.ListAdapter
 import com.example.capstonepesaing.data.local.Category
 import com.example.capstonepesaing.databinding.ActivityMainBinding
-import com.example.capstonepesaing.ui.barang.add.AddBarangActivity
+import com.example.capstonepesaing.ui.addbarang.AddBarangActivity
 
 class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Category>()

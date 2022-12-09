@@ -1,4 +1,4 @@
-package com.example.capstonepesaing.ui.barang.add
+package com.example.capstonepesaing.ui.addbarang
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
