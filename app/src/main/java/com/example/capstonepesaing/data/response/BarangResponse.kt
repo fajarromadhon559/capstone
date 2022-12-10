@@ -10,6 +10,7 @@ data class BarangResponse(
 	@field:SerializedName("BarangResponse")
 	val barangResponse: List<BarangResponseItem?>? = null
 ) : Parcelable
+//user
 
 @Parcelize
 data class BarangResponseItem(

@@ -22,9 +22,16 @@ interface ApiService {
     suspend fun getAllLocation()
 
     @GET("login.php")
-    suspend fun loginUser(
+    fun login(
         @Field("email") email: String,
         @Field("password") password: String
     ) : ResultResponse
+
+    @GET("register.php")
+    fun register(
+        @Field("name") name: String,
+        @Field("email") email: String,
+        @Field("password") password: String
+    )
 
 }
