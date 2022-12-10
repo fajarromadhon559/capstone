@@ -3,6 +3,7 @@ package com.example.capstonepesaing.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.example.capstonepesaing.data.repository.Repository
+import com.example.capstonepesaing.data.response.LoginResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -12,5 +13,5 @@ class LoginViewModel @Inject constructor(private val repository: Repository): Vi
     val isLoading: LiveData<Boolean> = repository.isLoading
     val toastMessage: LiveData<String> = repository.toastMessage
 
-    fun loginUser(email: String, password: String) = repository.loginUser(email, password)
+    fun loginUser(email: String, password: String) = repository.login(email, password)
 }

@@ -7,6 +7,7 @@ import androidx.lifecycle.liveData
 import com.example.capstonepesaing.data.UserPreference
 import com.example.capstonepesaing.data.model.Barang
 import com.example.capstonepesaing.data.remote.ApiService
+import com.example.capstonepesaing.data.response.LoginResponse
 import com.example.capstonepesaing.data.response.ResultResponse
 import com.example.capstonepesaing.requirement.RETROFIT_TAG
 import com.example.capstonepesaing.requirement.wrapEspressoIdlingResource
@@ -44,7 +45,7 @@ class Repository @Inject constructor(
     fun login(email: String, password: String){
         wrapEspressoIdlingResource {
             _isLoading.value = true
-            apiService.loginUser(email, password)
+            apiService.login(email, password)
                 .enqueue(object : Callback<LoginResponse> {
                     override fun onResponse(
                         call: Call<LoginResponse>,
@@ -52,7 +53,7 @@ class Repository @Inject constructor(
                     ) {
                         _isLoading.value = false
                         if (response.isSuccessful) {
-                            _toastMessage.value = response.body()?.message
+                            _toastMessage.value = response.body()?
                             _userLogin.value = response.body()?.loginResult
                             Log.d(RETROFIT_TAG, response.body()?.message.toString())
                             Log.d(RETROFIT_TAG, response.body()?.loginResult?.email ?: "email")
@@ -75,19 +76,32 @@ class Repository @Inject constructor(
     }
 
 
-    fun register(name: String, email: String, password: String): LiveData<ResultResponse> = liveData{
-            emit(ResultResponse.Loading)
-        try {
-            val response = apiService.register(
-                name, email, password
-            )
-            if (response.error){
-                emit(ResultResponse.Error(response.message))
-            } else {
-                emit(ResultResponse.Error())
-            }
-        }
+//    fun register(name: String, email: String, password: String): LiveData<ResultResponse> = liveData{
+//            emit(ResultResponse.Loading)
+//        try {
+//            val response = apiService.register(
+//                name, email, password
+//            )
+//            if (response.error){
+//                emit(ResultResponse.Error(response.message))
+//            } else {
+//                emit(ResultResponse.Error())
+//            }
+//        }
+//
+//    }
 
+    companion object{
+        @Volatile
+        private var instance : Repository? = null
+        fun getInstance(
+            apiService: ApiService,
+            preference: UserPreference
+            //memberDao: MemberDao
+        ): Repository = instance ?: synchronized(this){
+            instance ?: Repository(apiService, preference)
+            //instance ?: Repository(apiService,memberDao)
+        }.also { instance = it }
     }
 
 
