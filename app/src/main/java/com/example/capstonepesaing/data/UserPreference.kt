@@ -17,6 +17,7 @@ class UserPreference @Inject constructor(@ApplicationContext val context: Contex
 
 
     companion object{
+        private val NAME_KEY = stringPreferencesKey("name")
         private val EMAIL = stringPreferencesKey("email")
         private val USER_ID = stringPreferencesKey("userid")
     }
