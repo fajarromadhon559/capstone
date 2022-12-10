@@ -15,7 +15,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.capstonepesaing.R
 import com.example.capstonepesaing.data.local.Category
 import com.example.capstonepesaing.databinding.ActivityMainBinding
-import com.example.capstonepesaing.ui.addbarang.AddBarangActivity
+import com.example.capstonepesaing.ui.category.AllCategory
+import com.example.capstonepesaing.ui.map.MapActivity
 
 class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Category>()
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
         supportActionBar?.title = "Home"
 
+        binding.btnAllCategory.setOnClickListener{
+            val i = Intent(this,AllCategory::class.java)
+            startActivity(i)
+        }
+
         rvCategory = binding.rvCategory
         rvCategory.setHasFixedSize(true)
         list.addAll(listCategory)
@@ -42,14 +48,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun pedagang(){
         binding.btnPedagang.setOnClickListener{
-            val intent = Intent(this, AddBarangActivity::class.java)
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity as Activity).toBundle())
         }
     }
 
     private fun warung(){
         binding.btnWarung.setOnClickListener{
-            val intent = Intent(this, AddBarangActivity::class.java)
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(this@MainActivity as Activity).toBundle())
         }
     }

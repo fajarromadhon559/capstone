@@ -23,9 +23,6 @@
             android:name=".ui.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.addbarang.AddBarangActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.detail_pedagang.warung.DetailWarung"
             android:exported="false" />
         <activity
@@ -51,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.category.CategoryDetail"
+            android:name=".ui.category.AllCategory"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

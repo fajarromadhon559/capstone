@@ -8,10 +8,12 @@
         <entry key="..\:/Android Studio Projects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Android Studio Projects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_pre_login.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.1685" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable-anydpi/white_arrow.xml" value="0.2175" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/btn.xml" value="0.1685" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.1685" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.1685" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/profile.xml" value="0.1685" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/rectangle.xml" value="0.185" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/riwayat.xml" value="0.1685" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/drawable/spinner_.xml" value="0.1685" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/font/roboto_medium.xml" value="0.28020833333333334" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_cart.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_category_detail.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_detail_barang.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_detail_barang_vu.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_detail_pedagang_keliling.xml" value="0.264" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_detail_warung.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_finish_register.xml" value="0.22826086956521738" />
@@ -30,11 +33,14 @@
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_pre_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/all_category.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/best_seller_items.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/category_items.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/detail_category.xml" value="0.22622478386167147" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/footer.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/header.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/map_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/rv_detail_category.xml" value="0.37543453070683663" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/layout/rv_item.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/dicoding_capstone_pesaing/app/src/main/res/menu/nav_menu.xml" value="0.24895833333333334" />
       </map>

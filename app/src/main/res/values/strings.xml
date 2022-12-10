@@ -32,6 +32,10 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="welcome2">Mau belanja apa hari ini?</string>
+    <string name="new_order">New Order</string>
+    <string name="otw">Sedang Dalam Perjalanan</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -54,6 +58,7 @@
     <string name="out_location_pedagang">Lokasi terkini pedagang</string>
     <string name="out_location_warung">Lokasi terkini warung</string>
     <string name="simpang_pengguna">Simpan Pengguna</string>
+    <string name="txt_barang">Nama Barang</string>
 
     <!--Botton Nav-->
     <string name="home">Home</string>
