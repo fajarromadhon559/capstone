@@ -24,6 +24,8 @@
     <string name="ek_img_content">ExportKit Image</string>
     <string name="login_string">Login</string>
     <string name="password_string">Password</string>
+    <string name="konfirm_pw">Konirmasi Password</string>
+    <string name="new_password_string">New Password</string>
     <string name="email_string">Email</string>
     <string name="login_ek1_string">Masuk</string>
     <string name="title_activity_register">Daftar</string>
