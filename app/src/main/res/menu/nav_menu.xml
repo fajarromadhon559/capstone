@@ -13,7 +13,7 @@
         android:id="@+id/riwayat"
         android:icon="@drawable/riwayat"/>
 
-    <item android:title="@string/profile"
-        android:id="@+id/profile"
-        android:icon="@drawable/profile"/>
+    <item android:title="@string/keluar"
+        android:id="@+id/keluar"
+        android:icon="@drawable/ic_outline_logout_24"/>
 </menu>

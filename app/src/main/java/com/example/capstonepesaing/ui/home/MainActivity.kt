@@ -1,11 +1,13 @@
 package com.example.capstonepesaing.ui.home
 
 import android.app.Activity
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.app.ActivityOptionsCompat
@@ -18,6 +20,12 @@ import com.example.capstonepesaing.databinding.ActivityLoginUserBinding
 import com.example.capstonepesaing.databinding.ActivityMainBinding
 import com.example.capstonepesaing.ui.category.AllCategory
 import com.example.capstonepesaing.ui.map.MapActivity
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.annotation.NonNull
+import androidx.appcompat.app.AlertDialog
+import com.google.android.material.bottomnavigation.BottomNavigationView.OnNavigationItemReselectedListener
+
 
 class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Category>()
@@ -42,9 +50,63 @@ class MainActivity : AppCompatActivity() {
         list.addAll(listCategory)
         showRecyclerList()
 
+        bottomNavClickListener()
+
 //        pedagang()
 //        warung()
 //        setupViewModel()
+    }
+
+    private fun bottomNavClickListener(){
+        binding.navBottom.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> {
+                    Toast.makeText(this,"Home", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.cart -> {
+                    Toast.makeText(this,"Coming Soon", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.riwayat -> {
+                    Toast.makeText(this,"Coming Soon", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.keluar -> {
+                    showLogoutAlertDialog()
+                    true
+                }
+                else -> {
+                    super.onOptionsItemSelected(item)
+                }
+            }
+            true
+        }
+    }
+
+    private fun showLogoutAlertDialog(){
+            // build alert dialog
+            val dialogBuilder = AlertDialog.Builder(this)
+
+            // set message of alert dialog
+            dialogBuilder.setMessage("Do you want to Logout from current user ?")
+                // if the dialog is cancelable
+                .setCancelable(false)
+                // positive button text and action
+                .setPositiveButton("Logout", DialogInterface.OnClickListener {
+                        dialog, id -> finish()
+                })
+                // negative button text and action
+                .setNegativeButton("Cancel", DialogInterface.OnClickListener {
+                        dialog, id -> dialog.cancel()
+                })
+
+            // create dialog box
+            val alert = dialogBuilder.create()
+            // set title for alert dialog box
+            alert.setTitle("Logout")
+            // show alert dialog
+            alert.show()
     }
 
     private fun pedagang(){
@@ -61,6 +123,29 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.home -> {
+                true
+            }
+            R.id.cart -> {
+                Toast.makeText(this,"Coming Soon", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.riwayat -> {
+                Toast.makeText(this,"Coming Soon", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.keluar -> {
+                Toast.makeText(this,"Keluar", Toast.LENGTH_SHORT).show()
+                true
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
+            }
+        }
+    }
+
 //    private fun setupViewModel(){
 //
 //    }
@@ -72,7 +157,7 @@ class MainActivity : AppCompatActivity() {
 
             val list = ArrayList<Category>()
             for (i in categoryName.indices) {
-                val category = Category(categoryName[i],categoryImg.getResourceId(i,-1),)
+                val category = Category(categoryName[i], categoryImg.getResourceId(i, -1))
                 list.add(category)
                 Log.e("ListCategory","${categoryName[i]}, ${categoryImg.getResourceId(i,-1)}")
             }

@@ -41,6 +41,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:src="@drawable/bg_action_top"
+                            android:layout_marginTop="-40px"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +65,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/welcome2"
                             android:textColor="@color/white"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.497"
                             app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +78,7 @@
                             android:layout_marginTop="36dp"
                             android:text="@string/new_order"
                             android:textColor="@color/white"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/wlcome2" />
 
@@ -88,7 +89,7 @@
                             android:layout_marginEnd="38dp"
                             android:text="@string/otw"
                             android:textColor="@color/white"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/wlcome2" />
 
@@ -218,6 +219,7 @@
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"

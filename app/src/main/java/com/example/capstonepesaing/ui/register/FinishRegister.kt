@@ -18,8 +18,9 @@ class FinishRegister : AppCompatActivity() {
 
     //Jadi misal si user udah selesai regist gak perlu ke login lagi, langsung ke main
         binding.btnFinish.setOnClickListener{
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, MainActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            })
         }
     }
 }

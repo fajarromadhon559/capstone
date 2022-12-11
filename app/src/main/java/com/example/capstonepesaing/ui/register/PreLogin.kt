@@ -6,10 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.capstonepesaing.R
 import com.example.capstonepesaing.databinding.ActivityPreLoginBinding
+import com.example.capstonepesaing.ui.home.MainActivity
 import com.example.capstonepesaing.ui.login.LoginUser
+import com.google.firebase.auth.FirebaseAuth
 
 class PreLogin : AppCompatActivity() {
     private lateinit var binding : ActivityPreLoginBinding
+    private lateinit var mAuth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,14 +20,27 @@ class PreLogin : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        mAuth = FirebaseAuth.getInstance()
+
         binding.toRegister.setOnClickListener{
-            val i = Intent(this, RegisterActivity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, RegisterActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            })
         }
-//        buat ke login
+
         binding.toLogin.setOnClickListener{
-            val i = Intent(this, LoginUser::class.java)
-            startActivity(i)
+            startActivity(Intent(this, LoginUser::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            })
         }
+
+        checkSession()
+    }
+
+    private fun checkSession(){
+        if(mAuth.currentUser != null){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
     }
 }
