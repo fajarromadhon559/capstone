@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RegisterViewModel @Inject constructor(private val repository: Repository): ViewModel() {
-    val isLoading: LiveData<Boolean> =
+//    val isLoading: LiveData<Boolean> =
 
     fun registerUser(name: String, email: String, username: String){
 

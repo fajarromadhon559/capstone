@@ -13,9 +13,9 @@ class ViewModelFactory private constructor(private val repository: Repository) :
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
-            modelClass.isAssignableFrom(MainViewModel::class.java) -> {
-                MainViewModel(repository) as T
-            }
+//            modelClass.isAssignableFrom(MainViewModel::class.java) -> {
+//                MainViewModel(repository) as T
+//            }
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
                 LoginViewModel(repository) as T
             }
@@ -26,12 +26,13 @@ class ViewModelFactory private constructor(private val repository: Repository) :
         }
     }
 
-    companion object {
-        @Volatile
-        private var instance: ViewModelFactory? = null
-        fun getInstance(context: Context): ViewModelFactory =
-            instance ?: synchronized(this) {
-                instance ?: ViewModelFactory(Injection.provideRepository(context))
-            }.also { instance = it }
-    }
+
+//    companion object {
+//        @Volatile
+//        private var instance: ViewModelFactory? = null
+//        fun getInstance(context: Context): ViewModelFactory =
+//            instance ?: synchronized(this) {
+//                instance ?: ViewModelFactory(Injection.provideRepository(context))
+//            }.also { instance = it }
+//    }
 }

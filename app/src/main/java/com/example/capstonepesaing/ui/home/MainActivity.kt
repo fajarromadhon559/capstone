@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.capstonepesaing.R
 import com.example.capstonepesaing.data.local.Category
+import com.example.capstonepesaing.databinding.ActivityLoginUserBinding
 import com.example.capstonepesaing.databinding.ActivityMainBinding
 import com.example.capstonepesaing.ui.category.AllCategory
 import com.example.capstonepesaing.ui.map.MapActivity
@@ -21,15 +22,15 @@ import com.example.capstonepesaing.ui.map.MapActivity
 class MainActivity : AppCompatActivity() {
     private val list = ArrayList<Category>()
     private lateinit var rvCategory: RecyclerView
-    private val viewModel by viewModels<MainViewModel>()
+//    private val viewModel by viewModels<MainViewModel>()
     private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-        supportActionBar?.title = "Home"
+        setContentView(binding.root)
+        supportActionBar?.hide()
+//        supportActionBar?.title = "Home"
 
         binding.btnAllCategory.setOnClickListener{
             val i = Intent(this,AllCategory::class.java)
@@ -41,9 +42,9 @@ class MainActivity : AppCompatActivity() {
         list.addAll(listCategory)
         showRecyclerList()
 
-        pedagang()
-        warung()
-        setupViewModel()
+//        pedagang()
+//        warung()
+//        setupViewModel()
     }
 
     private fun pedagang(){
@@ -60,9 +61,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupViewModel(){
-
-    }
+//    private fun setupViewModel(){
+//
+//    }
 
     private val listCategory: ArrayList<Category>
         get() {

@@ -13,5 +13,5 @@ class LoginViewModel @Inject constructor(private val repository: Repository): Vi
     val isLoading: LiveData<Boolean> = repository.isLoading
     val toastMessage: LiveData<String> = repository.toastMessage
 
-    fun loginUser(email: String, password: String) = repository.login(email, password)
+//    fun loginUser(email: String, password: String) = repository.login(email, password)
 }
